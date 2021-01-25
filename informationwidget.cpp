@@ -6,6 +6,7 @@
 #include <QDateTime>
 #include <QDebug>
 #include "notifywindow.h"
+#include <math.h>
 
 #define REFRESH_COUNT_IN_ONE_MINITE 3
 #define TIME_WORK (20 * REFRESH_COUNT_IN_ONE_MINITE) // 单位: 20s, 表示工作时间为 20 * 3 * 20s
@@ -55,7 +56,7 @@ void InformationWidget::refreshInfo()
 	case WorkState::work:
 		// 显示当前时间
         m_infoLabel->setText(QString("%1分钟")
-                    .arg(static_cast<int>(time_count / REFRESH_COUNT_IN_ONE_MINITE)));
+                    .arg(ceil(time_count / REFRESH_COUNT_IN_ONE_MINITE)));
 		time_count -= 1;
 		if (time_count == 0) {
 			work_count += 1;
@@ -84,7 +85,7 @@ void InformationWidget::refreshInfo()
 			time_count = TIME_WORK;
 			work_state = WorkState::work;
             m_infoLabel->setText(QString("%1分钟")
-                    .arg(static_cast<int>(time_count / REFRESH_COUNT_IN_ONE_MINITE)));
+                    .arg(ceil(time_count / REFRESH_COUNT_IN_ONE_MINITE)));
         }
 		break;
 	}
