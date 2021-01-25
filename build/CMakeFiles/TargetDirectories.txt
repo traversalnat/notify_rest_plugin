@@ -1,8 +1,0 @@
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/install/strip.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/edit_cache.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/notify_rest.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/list_install_components.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/install/local.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/rebuild_cache.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/install.dir
-/home/jackzhang/workspace/notify_rest/build/CMakeFiles/notify_rest_autogen.dir
